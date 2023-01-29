@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+body {
+    @apply bg-zinc-900 text-zinc-50;
+}
+
+header nav ul li {
+    counter-increment: item 1;
+}
+
+header nav ul li a::before {
+    content: "0" counter(item);
+    @apply text-blue-600 block;
+}
+
+header nav ul li:hover a::before {
+    @apply text-zinc-50;
+}
+
+section.banner-home {
+    background-image: url('/images/banner.jpg');
+    @apply  bg-no-repeat bg-cover bg-center;
+}
+
+.react-multi-carousel-list,
+.react-multi-carousel-track,
+.react-multi-carousel-item.image-item {
+    @apply h-full
+}
