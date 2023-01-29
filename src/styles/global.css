@@ -5,6 +5,7 @@
 @layer base {
     html {
         font-family: 'Roboto', sans-serif;
+        @apply scroll-smooth;
     }
 }
 
@@ -12,16 +13,26 @@ body {
     @apply bg-zinc-900 text-zinc-50;
 }
 
-header nav ul li {
+header nav ul.list-links li {
     counter-increment: item 1;
+    @apply h-auto;
 }
 
-header nav ul li a::before {
+header nav ul.list-links li a {
+    @apply w-24 h-12 flex items-center flex-col justify-center text-xs;
+}
+
+ul.absolute li a {
+    @apply w-full h-full flex flex-col items-center justify-center;
+}
+
+header nav ul.list-links li a span::before {
     content: "0" counter(item);
     @apply text-blue-600 block;
 }
 
-header nav ul li:hover a::before {
+header nav ul.list-links li.bg-blue-600 a span::before,
+header nav ul.list-links li:hover a span::before {
     @apply text-zinc-50;
 }
 
