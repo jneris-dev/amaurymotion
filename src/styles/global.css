@@ -46,3 +46,20 @@ section.banner-home {
 .react-multi-carousel-item.image-item {
     @apply h-full
 }
+
+.scroll {    
+    -webkit-animation: finger 1s infinite;
+    animation: finger 1s infinite;
+}
+
+@keyframes finger {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}

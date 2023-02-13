@@ -5,7 +5,7 @@ import { NavLink } from "./NavLink";
 const links = [
     {
         label: 'Início',
-        hash: '#inicio'
+        hash: '/#inicio'
     },
     {
         label: 'Serviços',

@@ -3,6 +3,7 @@ import { GearSix, InstagramLogo, Lightbulb, LinkedinLogo, TreeStructure, Twitter
 import Typed from "typed.js";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from "react-router-dom";
 
 const responsive = {
     desktop: {
@@ -45,13 +46,13 @@ export function Home() {
                 <div className="w-full h-full bg-black bg-opacity-40">
                     <div className="w-full max-w-screen-5xl px-5 h-full flex items-center justify-center mx-auto">
                         <div className="flex flex-col gap-5 fixed left-5 z-10">
-                            <a href="">
+                            <a href="" className="hover:text-blue-600 transition-colors">
                                 <InstagramLogo size={22} weight="fill" />
                             </a>
-                            <a href="">
+                            <a href="" className="hover:text-blue-600 transition-colors">
                                 <LinkedinLogo size={22} weight="fill" />
                             </a>
-                            <a href="">
+                            <a href="" className="hover:text-blue-600 transition-colors">
                                 <TwitterLogo size={22} weight="fill" />
                             </a>
                         </div>
@@ -60,7 +61,12 @@ export function Home() {
                             <span ref={el} />
                         </h1>
                         <div className="flex fixed -right-12 rotate-[270deg] tracking-widest z-10">
-                            <a href="" className="">+55 11 971514175</a>
+                            <a href="" className="hover:text-blue-600 transition-colors text-sm flex gap-3 items-center">
+                                <div className="w-3 h-3 rounded-full border-2 border-blue-600" />
+                                <span>
+                                    +55 11 971514175
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +177,7 @@ export function Home() {
                 >
                     <div className="relative group h-full">
                         <img src="/images/cover.jpg" className="w-full h-full max-w-full object-cover object-top" alt="" />
-                        <div className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
+                        <Link to={'/portfolio/light-bulb'} className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
                             <h2 className="text-2xl mb-2 font-bold">
                                 Light Bulb
                             </h2>
@@ -179,11 +185,11 @@ export function Home() {
                             <p className="text-zinc-400 hidden group-hover:block">
                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                             </p>
-                        </div>
+                        </Link>
                     </div>
                     <div className="relative group h-full">
                         <img src="/images/cover.jpg" className="w-full h-full max-w-full object-cover object-top" alt="" />
-                        <div className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
+                        <Link to={'/portfolio/light-bulb'} className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
                             <h2 className="text-2xl mb-2 font-bold">
                                 Light Bulb
                             </h2>
@@ -191,11 +197,11 @@ export function Home() {
                             <p className="text-zinc-400 hidden group-hover:block">
                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                             </p>
-                        </div>
+                        </Link>
                     </div>
                     <div className="relative group h-full">
                         <img src="/images/cover.jpg" className="w-full h-full max-w-full object-cover object-top" alt="" />
-                        <div className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
+                        <Link to={'/portfolio/light-bulb'} className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
                             <h2 className="text-2xl mb-2 font-bold">
                                 Light Bulb
                             </h2>
@@ -203,11 +209,11 @@ export function Home() {
                             <p className="text-zinc-400 hidden group-hover:block">
                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                             </p>
-                        </div>
+                        </Link>
                     </div>
                     <div className="relative group h-full">
                         <img src="/images/cover.jpg" className="w-full h-full max-w-full object-cover object-top" alt="" />
-                        <div className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
+                        <Link to={'/portfolio/light-bulb'} className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
                             <h2 className="text-2xl mb-2 font-bold">
                                 Light Bulb
                             </h2>
@@ -215,11 +221,11 @@ export function Home() {
                             <p className="text-zinc-400 hidden group-hover:block">
                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                             </p>
-                        </div>
+                        </Link>
                     </div>
                     <div className="relative group h-full">
                         <img src="/images/cover.jpg" className="w-full h-full max-w-full object-cover object-top" alt="" />
-                        <div className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
+                        <Link to={'/portfolio/light-bulb'} className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
                             <h2 className="text-2xl mb-2 font-bold">
                                 Light Bulb
                             </h2>
@@ -227,11 +233,11 @@ export function Home() {
                             <p className="text-zinc-400 hidden group-hover:block">
                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                             </p>
-                        </div>
+                        </Link>
                     </div>
                     <div className="relative group h-full">
                         <img src="/images/cover.jpg" className="w-full h-full max-w-full object-cover object-top" alt="" />
-                        <div className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
+                        <Link to={'/portfolio/light-bulb'} className="absolute w-full h-full flex flex-col justify-end px-5 pb-28 inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30">
                             <h2 className="text-2xl mb-2 font-bold">
                                 Light Bulb
                             </h2>
@@ -239,7 +245,7 @@ export function Home() {
                             <p className="text-zinc-400 hidden group-hover:block">
                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                             </p>
-                        </div>
+                        </Link>
                     </div>
                 </Carousel>
             </section>
