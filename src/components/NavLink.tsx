@@ -5,7 +5,7 @@ export function NavLink(props: any) {
     const location = useLocation();
 
     return (
-        <li className={`w-full cursor-pointer transition-colors h-16 hover:bg-blue-600 ${location.hash === props.hash ? 'bg-blue-600' : ''}`}>
+        <li className={`w-full cursor-pointer transition-colors h-16 hover:bg-blue-600 ${'/' + location.hash === props.hash ? 'bg-blue-600' : ''}`}>
             <HashLink
                 to={`${props.hash}`}
                 className="uppercase font-bold"

@@ -63,3 +63,8 @@ section.banner-home {
         transform: translateY(20px);
     }
 }
+
+.vimeo-wrapper iframe {
+    height: 56.25vw;
+    min-width: 177.77vh;
+}

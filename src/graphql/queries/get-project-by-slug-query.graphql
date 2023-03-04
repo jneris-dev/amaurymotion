@@ -1,0 +1,25 @@
+query GetPostBySlug($slug: String!) {
+  project(where: {slug: $slug}) {
+    id
+    title
+    slug
+    date
+    client {
+      id
+      name
+    }
+    role {
+      id
+      title
+    }
+    description
+    colors
+    cover {
+      url
+    }
+    image {
+      url
+    }
+    video
+  }
+}

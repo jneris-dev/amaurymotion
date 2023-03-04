@@ -7,10 +7,12 @@ import { Single } from "../pages/Single";
 
 export function Router() {
     return (
-        <Routes>
-            <Route path="*" element={<Navigate replace to="/" />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio/:id" element={<Single />} />
-        </Routes>
+        <ScrollToTop>
+            <Routes>
+                <Route path="*" element={<Navigate replace to="/" />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/portfolio/:slug" element={<Single />} />
+            </Routes>
+        </ScrollToTop>
     );
 }

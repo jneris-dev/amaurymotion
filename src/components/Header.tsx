@@ -9,19 +9,19 @@ const links = [
     },
     {
         label: 'Serviços',
-        hash: '#servicos'
+        hash: '/#servicos'
     },
     {
         label: 'Sobre',
-        hash: '#sobre'
+        hash: '/#sobre'
     },
     {
         label: 'Portfólio',
-        hash: '#portfolio'
+        hash: '/#portfolio'
     },
     {
         label: 'Contato',
-        hash: '#contato'
+        hash: '/#contato'
     }
 ]
 
@@ -35,7 +35,7 @@ export function Header() {
                     <strong className="text-xl">Amaury Oliveira</strong>
                     <ul className="gap-2 lg:flex hidden list-links">
                         {links.map((link, index) => (
-                            <NavLink key={index} label={link.label} hash={link.hash} />
+                            <NavLink key={index} label={link.label} hash={link.hash} setState={setOpenMenu} />
                         ))}
                     </ul>
                     <div className="flex gap-3">

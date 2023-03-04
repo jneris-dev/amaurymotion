@@ -1,0 +1,11 @@
+query GetProjects {
+  projects(orderBy: publishedAt_ASC, stage: PUBLISHED) {
+    id
+    title
+    slug
+    description
+    cover {
+      url
+    }
+  }
+}
