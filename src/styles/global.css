@@ -37,7 +37,6 @@ header nav ul.list-links li:hover a span::before {
 }
 
 section.banner-home {
-    background-image: url('/images/banner.jpg');
     @apply  bg-no-repeat bg-cover bg-center;
 }
 

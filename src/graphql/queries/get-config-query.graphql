@@ -1,0 +1,34 @@
+query GetConfig($id: ID!) {
+  config(where: {id: $id}) {
+    skills
+    theme {
+      hex
+    }
+    phone
+    email
+    bannerVideo
+    coverBannerVideo {
+      url
+    }
+    cv {
+      url
+    }
+    profile {
+      url
+    }
+    services {
+      url
+    }
+    about
+    works(orderBy: publishedAt_ASC) {
+      id
+      title
+      description
+      start
+      end
+    }
+    contact {
+      url
+    }
+  }
+}
